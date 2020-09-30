@@ -13,4 +13,10 @@ export const Content = styled.div`
   width: 100%;
   height: 80px;
   margin: 0 auto;
+
+  > h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 22px;
+  }
 `;
