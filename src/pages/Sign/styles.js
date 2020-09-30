@@ -9,7 +9,7 @@ export const FormSignIn = styled.form`
         `
       : css`
           visibility: hidden;
-          transform: translate(-125%);
+          transform: translate(-150%);
         `}
 `;
 
@@ -18,7 +18,7 @@ export const FormSignUp = styled.form`
     props.isVisibleSignIn
       ? css`
           visibility: hidden;
-          transform: translate(-125%);
+          transform: translate(-150%);
         `
       : css`
           visibility: visible;

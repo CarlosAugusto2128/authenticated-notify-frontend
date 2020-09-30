@@ -1,40 +1,55 @@
 import styled from 'styled-components';
+import imageBackground from '../../../assets/Images/backgroundImage2.jpg';
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #7159c1;
+  background: linear-gradient(
+      -200deg,
+      rgba(26, 188, 156, 0.7),
+      rgba(231, 76, 60, 0.5)
+    ),
+    url(${imageBackground});
+  background-size: cover;
+  /* background: #7159c1; */
 `;
 
 export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
-  height: 350px;
+  height: 400px;
   padding: 20px;
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border: 10px inset #fff;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(100%) blur(10px);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 
   > form {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    transition: all 0.4s;
+    transition: all 0.6s;
 
     > h3 {
       margin-bottom: 20px;
       text-align: center;
-      font-size: 22px;
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     > div {
