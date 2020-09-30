@@ -51,7 +51,8 @@ export const Content = styled.div`
         border-bottom: 1px solid #fff;
         background: transparent;
 
-        &:focus ~ label {
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
           top: 2px;
           left: 1px;
           font-size: 12px;
@@ -64,6 +65,7 @@ export const Content = styled.div`
         left: 5px;
         position: absolute;
         transition: all 0.4s;
+        pointer-events: none;
       }
     }
 
