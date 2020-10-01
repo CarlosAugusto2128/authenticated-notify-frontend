@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   width: 100%;
-  background: #7159c1;
+  padding: 0 20px;
 `;
 
 export const Content = styled.div`
