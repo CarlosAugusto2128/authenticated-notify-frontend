@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   position: relative;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
 
   > a {
     display: flex;

@@ -11,13 +11,11 @@ export const Content = styled.div`
   justify-content: space-between;
   max-width: 1200px;
   width: 100%;
-  height: 80px;
+  height: 120px;
   margin: 0 auto;
 
-  > h3 {
-    font-weight: bold;
-    color: #fff;
-    font-size: 22px;
+  > img {
+    height: 100%;
   }
 
   > nav {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
+import logo from '../../assets/Images/logoImage.png';
 import { MdPowerSettingsNew } from 'react-icons/md';
 import { Container, Content } from './styles';
 
@@ -17,7 +18,7 @@ export default function Header() {
   return (
     <Container>
       <Content>
-        <h3>NotifyAuth</h3>
+        <img src={logo} alt="" />
         <nav>
           <Notification />
           <button type="button" onClick={handleSignOut}>
